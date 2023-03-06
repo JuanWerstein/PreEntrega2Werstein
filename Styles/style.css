@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color:rgb(59, 59, 59);  
+}
+
+
+
+  /* grid container */
+
+.grid-container {
+    display: grid;
+    min-height: 90vh;
+    grid-template-rows: auto 1fr auto;
+   
+}
+
+  /* nav-bar */
+
+nav img {
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar {
+    border-bottom: .5px solid rgba(226, 226, 226, .1);
+    grid-area: "navbar";
+    
+}
+.navbar:hover {
+    border-bottom: .5px solid rgba(226, 226, 226, .2)
+}
+
+.navbar-collapse {
+    justify-content: right;
+    padding-right: 40px;
+}
+
+.dropdown-menu a {
+    color: rgb(163, 163, 163);
+}
+
+  /* main */
+
+.main {
+    grid-area: "main";
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.background-image {
+    width: 350px;
+    height: 350px;
+    border: 3px solid rgba(134, 134, 134,.3);
+    text-align: center;
+    padding: 25px;
+    color: rgb(250, 250, 250);
+    background-image: url(../Images/Tabla.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .8 ;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background-image:hover {
+    border: 4px solid rgba(134, 134, 134,.5)
+}
+
+.main h1 {
+    background-color: rgba(247, 106, 106,0);
+    color: rgb(41, 41, 41);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main a {
+    color: rgb(224, 224, 224);
+    background-color: rgba(247, 106, 106,0);
+    font-size: 20px;
+}
+
+
+   /* footer */
+
+
+.container-fluid  img{
+    height: 50px;
+    
+}
+
+.text-footer p {
+    text-align: right;
+    font-size: 15px;
+   color: rgb(150, 150, 150);
+   padding-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .text-footer p {
+        text-align: center;
+        font-size: 15px;
+        color: rgb(150, 150, 150);      
+    }    
+}
